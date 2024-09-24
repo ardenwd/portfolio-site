@@ -21,12 +21,16 @@ body {
   margin-bottom: 5rem;
 }
 
-.project-link {
+button.project-link {
   height: auto;
   /* line-height: 0.8rem; */
   width: auto;
-  padding: 0.3rem 1rem;
-  margin: 1rem 0;
+  padding: 0rem 0.5rem;
+  margin: 1.3rem 0 0 2rem;
+  background-color: #e25b5b;
+}
+a.project-link {
+  color: white;
 }
 
 .proj-name {
@@ -44,10 +48,19 @@ img {
   height: 100%;
 }
 
+.thumb-img {
+  width: 80%;
+}
+
+.thumb-img.other {
+  width: 40%;
+}
+
 .antico-gif {
-  padding: 4rem;
   object-fit: cover;
-  margin: auto;
+  margin-top: -5%;
+  margin-left: 10%;
+  margin-bottom: -10%;
   rotate: -90deg;
   width: auto;
   max-height: 100%;
@@ -94,10 +107,12 @@ h1 {
   font-weight: 400;
   line-height: normal;
   min-width: 15.5rem;
+  margin: 0px;
 }
 
-h1 {
-  margin: 0px;
+h1.page {
+  color: black;
+  font-size: 3rem;
 }
 
 h2 {
@@ -116,11 +131,12 @@ h3 {
 
 p {
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 2.1rem;
 }
 
 a {
   text-decoration: none;
+  color: #e25b5b;
 }
 
 button {
@@ -240,6 +256,10 @@ button {
     flex-grow: 1;
     align-items: center;
     display: flex;
+  }
+  .thumb-img.other {
+    width: 80%;
+    margin: 10%;
   }
 }
 
