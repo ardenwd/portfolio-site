@@ -1,0 +1,314 @@
+html {
+  font-size: 16px;
+  background: #fff5fc;
+  font-family: "Work Sans", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  padding: 0rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}
+.proj {
+  margin-bottom: 5rem;
+}
+
+.project-link {
+  height: auto;
+  /* line-height: 0.8rem; */
+  width: auto;
+  padding: 0.3rem 1rem;
+  margin: 1rem 0;
+}
+
+.proj-name {
+  margin-bottom: 0rem;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0px;
+  margin-top: 0rem !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.antico-gif {
+  padding: 4rem;
+  object-fit: cover;
+  margin: auto;
+  rotate: -90deg;
+  width: auto;
+  max-height: 100%;
+}
+
+.gif-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  /* grid-column: 1 / var(--edge); */
+  --ratio: 0.58;
+  /* --h: calc(var(--contentw)* var(--ratio)); */
+  height: 100%;
+  overflow: scroll;
+}
+
+.sidebar {
+  width: 30%;
+  position: sticky;
+  top: 4rem;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+.name {
+  display: flex;
+  align-items: center;
+}
+.content {
+  width: 60%;
+  margin-top: 8rem;
+}
+
+.column {
+  /* display: block; */
+  /* width: 100%; */
+}
+
+h1 {
+  color: #da1818;
+  text-align: left;
+  font-family: "Averia Serif Libre", Georgia, "Times New Roman", Times, serif;
+  font-size: 4.45rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  min-width: 15.5rem;
+}
+
+h1 {
+  margin: 0px;
+}
+
+h2 {
+  font-family: "Averia Serif Libre", Georgia, "Times New Roman", Times, serif;
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: #da1818;
+  font-family: "Work Sans";
+  font-size: 1.55rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  height: 4rem;
+  width: 100%;
+  font-size: 2.1rem;
+  border-radius: 0.9375rem;
+  border: 3px solid #e25b5b;
+  background-color: #fff5fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  color: #e25b5b;
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.825rem;
+  text-decoration: none;
+}
+
+.menu {
+  margin-top: 4.5rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.menu-lines {
+  max-width: 3rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  .menu-lines {
+    max-width: 2.5rem;
+    padding-top: 0.2rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) {
+  button {
+    height: 2.5rem;
+  }
+  h1 {
+    font-size: 3.3rem;
+  }
+  .menu-lines {
+    max-width: 3.3rem;
+    padding-top: 0.3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  button {
+    font-size: 1.3rem;
+    line-height: 1.525rem;
+  }
+  button {
+    height: 3rem;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .content {
+    width: 100%;
+    margin-top: 0rem;
+  }
+  .sidebar {
+    width: 100%;
+    background-color: #fff5fc;
+    top: 0rem;
+    align-items: center;
+    display: flex;
+  }
+  h1 {
+    font-size: 2.5rem;
+    /* text-align: center; */
+    flex-grow: 1;
+  }
+  .menu {
+    margin-top: 2rem;
+  }
+
+  h3 {
+    display: none;
+  }
+  .menu-lines {
+    margin-left: auto;
+    max-width: 2.5rem;
+    padding-top: 0.3rem;
+  }
+  .header {
+    padding-top: 1rem;
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+  }
+}
+
+/* Large devices (laptops/desktops, 996px and up) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    max-width: 13rem;
+  }
+
+  button {
+    font-size: 1.3rem;
+  }
+
+  .menu-lines {
+    display: none;
+  }
+  .proj {
+    margin-bottom: 7rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 996px and up) */
+@media only screen and (min-width: 996px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    max-width: 13rem;
+  }
+
+  button,
+  a {
+    font-size: 1.3rem;
+  }
+  .menu-lines {
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 1.45rem;
+    max-width: 15rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1440px) {
+  h1 {
+    font-size: 4.45rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    max-width: 18rem;
+  }
+}
