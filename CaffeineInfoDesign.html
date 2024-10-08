@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Caffeine</title>
+  </head>
+
+  <body>
+    <script src="./main.js"></script>
+    <div class="container">
+      <div class="column sidebar">
+        <div class="header">
+          <h1 onclick="navClick()">Arden Davis</h1>
+          <img src="menu-lines.svg" class="menu-lines" onclick="toggleNav()" />
+        </div>
+        <h3 class="limit">Interactive Designer + Developer</h3>
+
+        <div class="menu" id="dropdown">
+          <button>
+            <a href="index.html" style="color: #e25b5b">data visualizations</a>
+          </button>
+          <button style="border-radius: 0.9375rem; border: 3px solid #ad9f54">
+            <a href="about.html" style="color: #ad9f54">about me</a>
+          </button>
+          <button style="border-radius: 0.9375rem; border: 3px solid #6da89d">
+            <a href="other.html" style="color: #6da89d">other</a>
+          </button>
+        </div>
+      </div>
+      <div class="column content">
+        <h1 class="page">Caffeine and Mood Data Exploration</h1>
+        <div class="opening">
+          <img src="./assets/caffeine/thumbnail.png" />
+          <p class="caption">
+            Physical data representation mapping the effect of caffeine on my
+            moods.
+          </p>
+        </div>
+        <p class="block1">
+          First thing in the morning, I head to a quiet conference room. I
+          always bring the energy - and my thermos. Flying through the agenda, I
+          lead the meeting like a caffeine-fueled cheerleader. Hours later,
+          between sips of cold brew, I endlessly chatter during a class-wide
+          discussion on experimental film. Walking to the library after class, I
+          feel what I can only describe as an overwhelming sense of inspiration
+          and joy. As I settle into my seat, my wild ideas manifest into jitters
+          and I’m unable to focus. “What’s going on with me?” I wonder as I
+          struggle to get to sleep at night.
+        </p>
+        <p>
+          Caffeine. It runs my college life. I consume it prescriptively and
+          strategically drink it to improve my mood and productivity on the
+          daily. But with a spike of energy being followed by a day-ruining
+          crash, I wondered if there was a distinguishable correlation between
+          coffee consumption and how I felt. As I began to talk to my friends,
+          it seemed like it impacted them differently. “Like any drug it
+          enhances my current state, so around my friends I’m in a happy mood;
+          it makes me funny but alone and I’m stressed, it sends me into anxiety
+          town”. With 5 coffee shops on campus, each offering a different menu
+          of options, everyone has a method to the madness. One friend
+          mentioned, “Caffeine from tea helps my brain, but caffeine from coffee
+          makes me feel bad”. Inspired by mood diaries, me and 3 classmates
+          began to collect data.
+        </p>
+        <h4>The Dataset</h4>
+        <p class="block1">
+          The data collection method was designed to track how caffeine habits
+          cause mood fluctuations throughout the day. Participants kept a mood
+          journal, taking note of mood and location every 2 hours as well as the
+          times when they consumed caffeine and how much they slept the night
+          before. The following is a preview of the dataset, and the rest can be
+          viewed here.
+        </p>
+        <div class="img-caption">
+          <img src="./assets/caffeine/image4.png" />
+          <p class="caption">
+            Physical data representation mapping the effect of caffeine on my
+            moods.
+          </p>
+        </div>
+        <h4>Chat GPT Data Cleaning Exploration</h4>
+        <p class="block1">
+          Rather than have a limited set of moods participants could choose from
+          to define their mood, there were a number of guiding adjectives given
+          to generate creative responses. The result of this was a lot of moods
+          without a clear scale to define their interaction. In search for a
+          scale, this metric emerged: In order to standardize the emotions in
+          the dataset, I defined a few of the most common responses in
+          accordance with this spectrum, then fed ChatGPT a prompt to quickly
+          standardize the rest. GPT also provided me with a python script which
+          I used to populate a column of mapped emotion values and format the
+          dataset. The resulting and final dataset looked like this can be
+          viewed fully here.
+        </p>
+        <div class="img-caption">
+          <img
+            src="./assets/caffeine/image9.png"
+            style="width: 48%; margin: auto; display: block"
+          />
+          <p class="caption">
+            Physical data representation mapping the effect of caffeine on my
+            moods.
+          </p>
+        </div>
+        <h4>Early Data Explorations</h4>
+        <p class="block1">
+          Using tools including tableau and Flourish, I looked for trends within
+          my data to form a narrative surrounding it.
+        </p>
+        <div class="img-caption">
+          <img src="./assets/caffeine/image6.png" />
+          <p class="caption">
+            Physical data representation mapping the effect of caffeine on my
+            moods.
+          </p>
+        </div>
+        <p>
+          Our moods are all over the place, filling every quadrant of the grid,
+          with the majority however, being the positive in the upper right hand
+          corner. Cathy expressed being tired more often and consumed caffeine
+          the least amount of times.
+        </p>
+        <h4>Exploring Difference by Person First</h4>
+        <p class="block1">
+          I noticed differences in the caffeine habits of me and my classmates.
+          One classmate tended to drink large amounts of caffeine first thing in
+          the morning and again in the afternoon. I tended to do so throughout
+          the day, and another classmate had it only during the middle of the
+          day.
+        </p>
+        <div class="img-caption">
+          <img src="./assets/caffeine/image1.png" />
+          <p class="caption">
+            Physical data representation mapping the effect of caffeine on my
+            moods.
+          </p>
+        </div>
+        <p>
+          This graph illuminates the difference in when me and my classmates
+          drink caffeine, and how much we drink. It also highlights that my
+          moods are stronger, and that Srishti drinks large amounts of
+          caffeinated beverages.
+        </p>
+        <div class="img-caption">
+          <img src="./assets/caffeine/image5.png" />
+          <p class="caption">
+            Physical data representation mapping the effect of caffeine on my
+            moods.
+          </p>
+        </div>
+        <h4>Exploring My Moods and Caffeine Consumption</h4>
+        <div class="img-caption" style="margin-top: 0">
+          <img src="./assets/caffeine/image7.png" />
+          <p class="caption">
+            Physical data representation mapping the effect of caffeine on my
+            moods.
+          </p>
+        </div>
+        <p class="block1">
+          I chose to shift to an individual level, focusing on how my awakeness
+          levels were altered following an increase in caffeine. I think the
+          second day well illustrated a caffeine crash. This was a day where I
+          had only slept 5.5 hours the night before and I drank a lot of
+          caffeine in the early afternoon to mitigate tiredness. However the
+          lack of sleep caught up to me and my awakeness began to decline.
+        </p>
+        <div class="img-caption">
+          <img src="./assets/caffeine/image2.png" />
+          <p class="caption">
+            Physical data representation mapping the effect of caffeine on my
+            moods.
+          </p>
+        </div>
+        <h4>Physical Product</h4>
+        <p class="block1">
+          The final iteration of this project required a physical manifestation,
+          so I chose the vessel that houses the coffee itself. Some people in my
+          class highlighted the way that water bottles have found a place beyond
+          simply being a source of hydration, explaining they can also be an
+          attachment object and that status and personality are communicated
+          with their appearance. Additionally, I thought about how if you see
+          someone drinking out of a thermos versus a water bottle, you expect
+          they’ve got some hot, usually caffeinated beverage in there. What you
+          don’t see, however, is what that drink is doing to them. I wanted to
+          combine these ideas about communicating personality and effect of
+          caffeine through a data visualization on my coffee cup. So, rather
+          than simply printing a static data visualization onto my cup, I made
+          it interactive.
+        </p>
+        <div class="img-caption">
+          <img
+            src="./assets/caffeine/image10.gif"
+            style="width: 50%; margin: auto"
+          />
+          <p class="caption">
+            Physical data representation mapping the effect of caffeine on my
+            moods.
+          </p>
+        </div>
+        <p>
+          Gaining popularity in asmr videos, pop-its emerged on the market as a
+          fidget toy. With the material being readily available and commonplace
+          to my gen-z peers, I cut and pasted the convex dots onto the outside
+          of my cup. Maintaining the language of the prior visualizations, moods
+          are encoded by color, with the placement of each dot symbolizing a
+          time when caffeine was consumed. Following this placement method, a
+          cup could look wildly different based on the individual’s internal
+          experience. By adding the interactive element, this product becomes a
+          performance piece, a dance depicting the jitters.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

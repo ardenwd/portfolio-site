@@ -18,7 +18,7 @@ body {
   margin-bottom: 5rem;
 }
 .proj {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 button.project-link {
@@ -26,11 +26,19 @@ button.project-link {
   /* line-height: 0.8rem; */
   width: auto;
   padding: 0rem 0.5rem;
-  margin: 1.3rem 0 0 2rem;
+  margin: 1.6rem 0 0 2rem;
   background-color: #e25b5b;
 }
+
 a.project-link {
   color: white;
+  font-size: 0.6em;
+  padding: 0rem 0.5rem;
+  margin: 0.6rem 0 0 0.5rem;
+  background-color: #e25b5b;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .proj-name {
@@ -45,7 +53,8 @@ a.project-link {
 
 img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  /* object-fit: cover; */
 }
 
 .thumb-img {
@@ -56,9 +65,13 @@ img {
   width: 40%;
 }
 
+.img-caption {
+  margin-top: 2rem;
+}
+
 .antico-gif {
   object-fit: cover;
-  margin-top: -5%;
+  margin-top: -10%;
   margin-left: 10%;
   margin-bottom: -10%;
   rotate: -90deg;
@@ -78,7 +91,7 @@ img {
 }
 
 .sidebar {
-  width: 30%;
+  width: 25%;
   position: sticky;
   top: 4rem;
   flex-direction: column;
@@ -89,20 +102,35 @@ img {
   align-items: center;
 }
 .content {
-  width: 60%;
-  margin-top: 8rem;
+  width: 63%;
+  margin-top: 4rem;
+  /* margin-right: 3%; */
 }
 
-.column {
-  /* display: block; */
-  /* width: 100%; */
+.col {
+  gap: 2rem;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  display: flex;
+  /* width: 50%; */
+  /* box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.11); */
+}
+
+.shadow {
+  box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.11);
+}
+.cols-2 {
+  gap: 2rem;
+  width: 100%;
+  display: flex;
+  margin-top: 2.6rem;
 }
 
 h1 {
   color: #da1818;
   text-align: left;
   font-family: "Averia Serif Libre", Georgia, "Times New Roman", Times, serif;
-  font-size: 4.45rem;
+  font-size: 4.15rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -111,8 +139,12 @@ h1 {
 }
 
 h1.page {
-  color: black;
-  font-size: 3rem;
+  line-height: 3.5rem;
+  color: #202124;
+  font-size: 3.5rem;
+  font-family: "Work Sans", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 0 0 0.8em 0;
 }
 
 h2 {
@@ -129,9 +161,32 @@ h3 {
   line-height: normal;
 }
 
+h4 {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0.6em 0;
+}
+
 p {
-  font-size: 1.5rem;
-  line-height: 2.1rem;
+  font-size: 1rem;
+  line-height: 1.9rem;
+  margin: 1em 0 0 0;
+  color: #555;
+}
+
+.caption {
+  margin: 0.5em 0;
+  color: #777;
+  font-size: 1rem;
+}
+.opening {
+  margin-bottom: 2rem;
+}
+
+.block1 {
+  margin: 0;
 }
 
 a {
@@ -139,6 +194,9 @@ a {
   color: #e25b5b;
 }
 
+.center {
+  text-align: center;
+}
 button {
   height: 4rem;
   width: 100%;
@@ -164,7 +222,7 @@ button {
 
 .menu {
   margin-top: 4.5rem;
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -176,8 +234,11 @@ button {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 500px) {
-  h1 {
+  h1.page {
     font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 2.3rem;
   }
   h2 {
     font-size: 1.7rem;
@@ -197,7 +258,7 @@ button {
     height: 2.5rem;
   }
   h1 {
-    font-size: 3.3rem;
+    font-size: 3.1rem;
   }
   .menu-lines {
     max-width: 3.3rem;
@@ -207,7 +268,7 @@ button {
     font-size: 2rem;
   }
   p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -235,7 +296,7 @@ button {
     display: flex;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     /* text-align: center; */
     flex-grow: 1;
   }
@@ -243,8 +304,10 @@ button {
     margin-top: 2rem;
   }
 
-  h3 {
+  .limit {
     display: none;
+    opacity: 70%;
+    text-align: left;
   }
   .menu-lines {
     margin-left: auto;
@@ -266,40 +329,50 @@ button {
 /* Large devices (laptops/desktops, 996px and up) */
 @media only screen and (min-width: 768px) {
   h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   h3 {
-    font-size: 1.25rem;
+    font-size: 1.08rem;
+  }
+  .limit {
     max-width: 13rem;
   }
 
   button {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    line-height: 1rem;
   }
 
   .menu-lines {
     display: none;
   }
   .proj {
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
+  }
+  .sidebar {
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
 
 /* Large devices (laptops/desktops, 996px and up) */
 @media only screen and (min-width: 996px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 
   h3 {
     font-size: 1.25rem;
+  }
+  .limit {
     max-width: 13rem;
   }
-
   button,
   a {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .menu-lines {
     display: none;
@@ -309,11 +382,13 @@ button {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   h3 {
     font-size: 1.45rem;
+  }
+  .limit {
     max-width: 15rem;
   }
 
@@ -324,11 +399,13 @@ button {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1440px) {
   h1 {
-    font-size: 4.45rem;
+    font-size: 3.7rem;
   }
 
   h3 {
     font-size: 1.75rem;
+  }
+  .limit {
     max-width: 18rem;
   }
 }
