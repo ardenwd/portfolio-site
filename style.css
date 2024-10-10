@@ -79,6 +79,12 @@ img {
   max-height: 100%;
 }
 
+.gif.scale.rotate {
+  transform: rotate(-90deg);
+  width: 65%;
+  margin: -5em auto;
+}
+
 .gif-container {
   display: flex;
   flex-flow: row nowrap;
@@ -196,7 +202,19 @@ a {
 
 .center {
   text-align: center;
+  margin: auto;
 }
+
+img.center {
+  display: block;
+  text-align: center;
+  margin: 1.2em auto;
+  width: 70%;
+}
+
+img.caption {
+}
+
 button {
   height: 4rem;
   width: 100%;
@@ -268,7 +286,7 @@ button {
     font-size: 2rem;
   }
   p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 
