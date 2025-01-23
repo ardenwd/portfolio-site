@@ -227,9 +227,6 @@ img.center {
   width: 70%;
 }
 
-img.caption {
-}
-
 button {
   height: 4rem;
   width: 100%;
@@ -489,7 +486,7 @@ button:hover {
   }
 
   button {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
